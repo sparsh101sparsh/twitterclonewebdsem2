@@ -1,0 +1,274 @@
+/* Left Sidebar */
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nav-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    transition: background-color 0.2s;
+}
+
+.nav-logo:hover {
+    background-color: var(--hover-bg);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-item {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 4px;
+    border-radius: 9999px;
+    font-size: 20px;
+    color: var(--text-primary);
+    transition: background-color 0.2s;
+    width: max-content;
+}
+
+.nav-item:hover {
+    background-color: var(--hover-bg);
+}
+
+.nav-item i {
+    width: 26px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.nav-item span {
+    margin-right: 16px;
+}
+
+.nav-item.active {
+    font-weight: 700;
+}
+
+.sidebar-left .post-btn {
+    width: 90%;
+    padding: 15px 0;
+    font-size: 17px;
+    margin-top: 16px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 15px, rgba(255, 255, 255, 0.15) 0px 0px 3px 1px;
+}
+
+.user-profile-mini {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.user-profile-mini:hover {
+    background-color: var(--hover-bg);
+}
+
+.user-profile-mini .avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.user-profile-mini .user-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.user-name {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.user-handle {
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+/* Right Sidebar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--search-bg);
+    border-radius: 9999px;
+    padding: 12px 20px;
+    margin-bottom: 16px;
+    border: 1px solid transparent;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.search-bar:focus-within {
+    border-color: var(--twitter-blue);
+    background-color: black;
+}
+
+.search-bar:focus-within i {
+    color: var(--twitter-blue);
+}
+
+.search-bar i {
+    color: var(--text-secondary);
+    margin-right: 15px;
+}
+
+.search-bar input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    width: 100%;
+    font-size: 15px;
+}
+
+.premium-box, .trends-box, .who-to-follow {
+    background-color: var(--search-bg);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.premium-box h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.premium-box p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.subscribe-btn {
+    background-color: var(--twitter-blue);
+    color: white;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-size: 15px;
+    transition: background-color 0.2s;
+}
+
+.subscribe-btn:hover {
+    background-color: var(--twitter-blue-hover);
+}
+
+.trends-box h2, .who-to-follow h2 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.trend-item {
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.trend-meta {
+    font-size: 13px;
+    color: var(--text-secondary);
+    display: flex;
+    justify-content: space-between;
+}
+
+.trend-title {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+
+.trend-stats {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.show-more {
+    color: var(--twitter-blue);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.show-more:hover {
+    text-decoration: underline;
+}
+
+.follow-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.follow-item .avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.follow-item .user-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.follow-item .user-name {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.follow-item .user-name:hover {
+    text-decoration: underline;
+}
+
+.follow-item .user-handle {
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+.follow-btn {
+    background-color: var(--text-primary);
+    color: black;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 9999px;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.follow-btn:hover {
+    background-color: #d7dbdc;
+}
+
+.footer-links {
+    padding: 0 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+}
+
+.footer-links a, .footer-links span {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

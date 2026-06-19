@@ -1,0 +1,213 @@
+/* Feed Header */
+.feed-header {
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(12px);
+    z-index: 10;
+}
+
+.tabs {
+    display: flex;
+    width: 100%;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 16px 0;
+    color: var(--text-secondary);
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s;
+}
+
+.tab:hover {
+    background-color: var(--hover-bg);
+}
+
+.tab.active {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.tab-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 56px;
+    height: 4px;
+    background-color: var(--twitter-blue);
+    border-radius: 9999px;
+}
+
+/* Compose Box */
+.compose-box {
+    display: flex;
+    padding: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.compose-box .avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.compose-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.compose-content input {
+    font-size: 20px;
+    padding: 12px 0;
+    color: var(--text-primary);
+    width: 100%;
+}
+
+.compose-content input::placeholder {
+    color: var(--text-secondary);
+}
+
+.compose-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+}
+
+.action-icons i {
+    color: var(--twitter-blue);
+    font-size: 18px;
+    margin-right: 16px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.action-icons i:hover {
+    background-color: var(--hover-bg-blue);
+}
+
+.post-btn-small {
+    background-color: var(--twitter-blue);
+    color: white;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+/* Tweets */
+.tweet {
+    display: flex;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.tweet:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.tweet .avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.tweet-content {
+    flex-grow: 1;
+}
+
+.tweet-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.tweet-user-info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.tweet-user-name {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.tweet-user-name:hover {
+    text-decoration: underline;
+}
+
+.tweet-user-handle, .tweet-time {
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+.verified-badge {
+    color: var(--twitter-blue);
+    font-size: 14px;
+}
+
+.tweet-text {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 12px;
+    white-space: pre-wrap;
+}
+
+.tweet-image {
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 12px;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.tweet-actions {
+    display: flex;
+    justify-content: space-between;
+    max-width: 425px;
+    color: var(--text-secondary);
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.action-btn i {
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+/* Hover colors for actions */
+.action-reply:hover { color: #1d9bf0; }
+.action-reply:hover i { background-color: rgba(29, 155, 240, 0.1); }
+
+.action-retweet:hover { color: #00ba7c; }
+.action-retweet:hover i { background-color: rgba(0, 186, 124, 0.1); }
+
+.action-like:hover { color: #f91880; }
+.action-like:hover i { background-color: rgba(249, 24, 128, 0.1); }
+
+.action-view:hover { color: #1d9bf0; }
+.action-view:hover i { background-color: rgba(29, 155, 240, 0.1); }

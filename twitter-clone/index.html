@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home / X</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/feed.css">
+</head>
+<body>
+    <div style="background-color: var(--twitter-blue); color: white; text-align: center; padding: 10px; font-weight: 700; font-size: 15px; position: sticky; top: 0; z-index: 1000; letter-spacing: 0.5px;">
+        Created by Sparsh Singh , Roll no :2503201001179 , Section : CSE 24
+    </div>
+    <div class="app-container">
+        <!-- Left Sidebar Navigation -->
+        <header class="sidebar-left">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">
+                    <!-- Custom SVG X logo -->
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-16y2uox r-8kz0gk r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp" width="30" height="30" fill="currentColor"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>
+                </a>
+                <nav class="nav-links">
+                    <a href="#" class="nav-item active"><i class="fa-solid fa-house"></i><span>Home</span></a>
+                    <a href="#" class="nav-item"><i class="fa-solid fa-magnifying-glass"></i><span>Explore</span></a>
+                    <a href="#" class="nav-item"><i class="fa-regular fa-bell"></i><span>Notifications</span></a>
+                    <a href="#" class="nav-item"><i class="fa-regular fa-envelope"></i><span>Messages</span></a>
+                    <a href="#" class="nav-item"><i class="fa-regular fa-bookmark"></i><span>Bookmarks</span></a>
+                    <a href="#" class="nav-item"><i class="fa-brands fa-x-twitter"></i><span>Premium</span></a>
+                    <a href="#" class="nav-item"><i class="fa-regular fa-user"></i><span>Profile</span></a>
+                    <a href="#" class="nav-item"><i class="fa-solid fa-ellipsis"></i><span>More</span></a>
+                </nav>
+                <button class="post-btn">Post</button>
+                
+                <div class="user-profile-mini">
+                    <img src="assets/profile.jpg" alt="Profile Picture" class="avatar">
+                    <div class="user-info">
+                        <span class="user-name">Sparsh Singh</span>
+                        <span class="user-handle">@sparsh_singh</span>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Feed Column -->
+        <main class="feed-main">
+            <div class="feed-header">
+                <div class="tabs">
+                    <div class="tab active">For you<div class="tab-indicator"></div></div>
+                    <div class="tab">Following</div>
+                </div>
+            </div>
+            
+            <div class="compose-box">
+                <img src="assets/profile.jpg" alt="Profile Picture" class="avatar">
+                <div class="compose-content">
+                    <input type="text" placeholder="What is happening?!">
+                    <div class="compose-actions">
+                        <div class="action-icons">
+                            <i class="fa-regular fa-image"></i>
+                            <i class="fa-solid fa-square-poll-horizontal"></i>
+                            <i class="fa-regular fa-face-smile"></i>
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <button class="post-btn-small" disabled>Post</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Posts container populated by JS -->
+            <div id="tweets-container">
+                <!-- Example Tweet will be injected here -->
+            </div>
+        </main>
+
+        <!-- Right Sidebar (Trends & Who to follow) -->
+        <aside class="sidebar-right">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="premium-box">
+                <h3>Subscribe to Premium</h3>
+                <p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+
+            <div class="trends-box">
+                <h2>What's happening</h2>
+                
+                <div class="trend-item">
+                    <div class="trend-meta">Trending in India <i class="fa-solid fa-ellipsis"></i></div>
+                    <div class="trend-title">#INDvsAUS</div>
+                    <div class="trend-stats">125K posts</div>
+                </div>
+                
+                <div class="trend-item">
+                    <div class="trend-meta">Technology · Trending <i class="fa-solid fa-ellipsis"></i></div>
+                    <div class="trend-title">#AIinIndia</div>
+                    <div class="trend-stats">45.2K posts</div>
+                </div>
+
+                <div class="trend-item">
+                    <div class="trend-meta">Entertainment · Trending <i class="fa-solid fa-ellipsis"></i></div>
+                    <div class="trend-title">Shah Rukh Khan</div>
+                    <div class="trend-stats">210K posts</div>
+                </div>
+
+                <div class="trend-item">
+                    <div class="trend-meta">Business · Trending <i class="fa-solid fa-ellipsis"></i></div>
+                    <div class="trend-title">Nifty 50</div>
+                    <div class="trend-stats">18.5K posts</div>
+                </div>
+
+                <a href="#" class="show-more">Show more</a>
+            </div>
+
+            <div class="who-to-follow">
+                <h2>Who to follow</h2>
+                <!-- Will be static for now -->
+                <div class="follow-item">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=100&h=100&fit=crop" alt="Avatar" class="avatar">
+                    <div class="user-info">
+                        <span class="user-name">Virat Kohli</span>
+                        <span class="user-handle">@imVkohli</span>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <div class="follow-item">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop" alt="Avatar" class="avatar">
+                    <div class="user-info">
+                        <span class="user-name">Priyanka</span>
+                        <span class="user-handle">@priyankachopra</span>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <a href="#" class="show-more">Show more</a>
+            </div>
+            
+            <footer class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Ads info</a>
+                <a href="#">More ...</a>
+                <span>© 2024 X Corp.</span>
+            </footer>
+        </aside>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
